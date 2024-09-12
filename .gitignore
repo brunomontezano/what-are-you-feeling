@@ -1,2 +1,3 @@
 data/
 .venv/
+model/__pycache__/
