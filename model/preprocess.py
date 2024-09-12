@@ -59,7 +59,23 @@ def download_stopwords_if_needed():
         nltk.download("stopwords")
 
 
+def download_punkt_if_needed():
+    try:
+        find("tokenizers/punkt.zip")
+    except LookupError:
+        nltk.download("stopwords")
+
+
+def download_punkt_tab_if_needed():
+    try:
+        find("tokenizers/punkt.zip")
+    except LookupError:
+        nltk.download("stopwords")
+
+
 download_stopwords_if_needed()
+download_punkt_if_needed()
+download_punkt_tab_if_needed()
 
 stop_words = set(stopwords.words("english"))
 
