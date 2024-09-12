@@ -1,4 +1,6 @@
+import nltk
 from nltk.corpus import stopwords
+from nltk.data import find
 from nltk.tokenize import word_tokenize
 import re
 import string
@@ -49,6 +51,15 @@ def preprocess_text(text: str) -> str:
 
     return text
 
+
+def download_stopwords_if_needed():
+    try:
+        find("corpora/stopwords.zip")
+    except LookupError:
+        nltk.download("stopwords")
+
+
+download_stopwords_if_needed()
 
 stop_words = set(stopwords.words("english"))
 
