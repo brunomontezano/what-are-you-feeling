@@ -68,7 +68,7 @@ def download_punkt_if_needed():
 
 def download_punkt_tab_if_needed():
     try:
-        find("tokenizers/punkt.zip")
+        find("tokenizers/punkt_tab.zip")
     except LookupError:
         nltk.download("stopwords")
 
