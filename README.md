@@ -9,3 +9,7 @@ feeling based on their message (sentence), and implemented this model in a web
 app built with the Streamlit framework in Python. The work was carried out by
 Bruno Montezano and Aline Zimerman, both PhD students in the Postgraduate
 Program in Psychiatry and Behavioral Sciences at UFRGS.
+
+## Screenshot
+
+![Usage of "What are you feeling?"](https://github.com/user-attachments/assets/f4ad43bd-00cf-45a7-a18f-0bbdd88db614)
