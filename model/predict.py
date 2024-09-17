@@ -10,7 +10,7 @@ vectorizer = joblib.load("objects/vectorizer.pkl")
 
 
 def predict_status(sentence: str) -> str:
-    if sentence is None:
+    if not sentence:
         return "How are you feeling today?"
 
     clean_sentence = preprocess_text(sentence)
@@ -24,7 +24,7 @@ def predict_status(sentence: str) -> str:
 
 
 def predict_proba(sentence: str) -> dict:
-    if sentence is None:
+    if not sentence:
         return {}
 
     clean_sentence = preprocess_text(sentence)
